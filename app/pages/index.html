@@ -1,0 +1,418 @@
+@@include('../layout/meta-head.html')
+
+  <title>Netflix Auda's Clone</title>
+
+@@include('../layout/rel-head.html')
+
+@@include('../layout/header.html')
+
+  <!-- Header -->
+  <header>
+    <video id="player" playsinline muted autoplay class="d-none d-md-block">
+      <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4" />
+    </video>
+    
+    <i class="fas fa-volume-mute video__mute mute" data-vol="up"></i>
+    <i class="fas fa-volume-up volume video__mute d-none" data-vol="mute"></i>
+
+    <img class="header__background" loading="lazy" src="https://source.unsplash.com/random/720x1280" alt="Video Image">
+
+    <div class="header__info">
+      <img loading="lazy" src="assets/images/netflix_full.svg" alt="Netflix Image">
+      <p>
+        Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself.
+        When one sunny day three rodents rudely harass him, cartoon tradition.
+      </p>
+      <div class="actions">
+        <button type="button" class="btn btn-play">
+          <i class="fas fa-play"></i>
+          Play
+        </button>
+        <button type="button" class="btn btn-moreInfo">
+          <i class="fas fa-info-circle"></i>
+          Info
+        </button>
+      </div>
+    </div>
+
+    <div class="header__layer"></div>
+  </header>
+  <!-- Header -->
+
+  <!-- Sliders Section -->
+  <section class="sliders__container">
+    <div class="slider">
+
+      <h5>Popular on Netflix
+        <span>Explore All</span> <i class="fas fa-chevron-right"></i>
+      </h5>
+
+      <!-- Slider main container -->
+      <div class="swiper" dir="rtl">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?travel" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?art" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?business " alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?athletics" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+  
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button  swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+  
+      </div>
+    </div>
+
+    <div class="slider">
+
+      <h5>Trending Now
+        <span>Explore All</span> <i class="fas fa-chevron-right"></i>
+      </h5>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?travel/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?art/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?business/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?athletics/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city/1" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+  
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button  swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+  
+      </div>
+    </div>
+
+    <div class="slider">
+
+      <h5>Award-Winning TV Shows
+        <span>Explore All</span> <i class="fas fa-chevron-right"></i>
+      </h5>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?travel/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?art/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?business/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?athletics/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city/2" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+  
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button  swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+  
+      </div>
+    </div>
+
+    <div class="slider">
+
+      <h5>Action Thrillers
+        <span>Explore All</span> <i class="fas fa-chevron-right"></i>
+      </h5>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?travel/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?art/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?business/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?athletics/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?people/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?fashion/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="logo" src="assets/images/netflix_ico.ico" alt="Netflix Logo">
+            <div class="new_epi">NEW EPISODES</div>
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?film/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="rounded shadow-sm swiper-lazy" data-src="https://source.unsplash.com/random/1280x720?city/3" alt="Video Image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+  
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button  swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- Sliders Section -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3>
+          WARNING! <i class="fas fa-skull-crossbones"></i>
+        </h3>
+        <p>
+          This is a grind work in a very late hour for almost 10 hours straight.
+        </p>
+        <p>
+          I apologize for any bug or issue due to a very minimum testing time.         
+        </p>
+        <h5>
+          Features
+        </h5>
+        <ul>
+          <li>Fully Responsive</li>
+          <li>RTL Supported</li>
+          <li>Video player with mute function</li>
+          <li>Responsive Sliders</li>
+          <li>Everything is lazy loading but need enchancments ofc</li>
+        </ul>
+        <p class="font-warn">
+          Not tested on safari (because I don't have one).        
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('../layout/footer.html')
